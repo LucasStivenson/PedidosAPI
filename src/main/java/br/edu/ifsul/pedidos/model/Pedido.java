@@ -4,16 +4,16 @@ import java.util.List;
 
 public class Pedido {
     private Long id;
-    private List<ItemPedido> listaPedidos;
+    private List<ItemPedido> itens;
     private double valorTotal;
     private double desconto;
 
     public Pedido() {
     }
 
-    public Pedido(Long id, List<ItemPedido> listaPedidos, double valorTotal, double desconto) {
+    public Pedido(Long id, List<ItemPedido> itens, double valorTotal, double desconto) {
         this.id = id;
-        this.listaPedidos = listaPedidos;
+        this.itens = itens;
         this.valorTotal = valorTotal;
         this.desconto = desconto;
     }
@@ -26,12 +26,12 @@ public class Pedido {
         this.id = id;
     }
 
-    public List<ItemPedido> getListaPedidos() {
-        return this.listaPedidos;
+    public List<ItemPedido> getItens() {
+        return this.itens;
     }
 
-    public void setListaPedidos(List<ItemPedido> listaPedidos) {
-        this.listaPedidos = listaPedidos;
+    public void setItens(List<ItemPedido> itens) {
+        this.itens = itens;
     }
 
     public double getValorTotal() {
